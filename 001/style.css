@@ -15,11 +15,14 @@ a:active {
 	text-decoration: underline;
 }
 
-.ascii-player, pre {
-	margin-left: 44px;
+pre:first-child {
+	margin-top: 30px;
 }
 
+.ascii-player, pre {
+	margin: 0 44px;
+}
 
-.ascii-player div {
-	margin-bottom: 25px;
+.ascii-player {
+	margin-top: 30px;
 }
