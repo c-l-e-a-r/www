@@ -24,23 +24,25 @@ function MainController () {
 				
 				if(e.keyCode == 13 && value != "") {
 
-					var $div = $('<div>## ' + $(this).val() + '<br/></div>');
+					var $div = $('<div>CLEAR:www guest$ ' + $(this).val() + '  <br/></div>');
 
 					switch (value){
-						case "about":
-							$div.append("Clear is a record label based off of Chicago, IL<br/><br/>")
+						case "ls":
+							$div.append("001<br/>")
 							break;
-						
-						case "releases":
-							$div.append("CLEAR01: Primitive Sci-fi - Untitled<br/><br/>");
+						case "cd 001":
+							$div.append("<a href='http://c-l-e-a-r.net/001'>readme.txt</a>")
+							break;
+						case "about":
+							$div.append("> We are a record label from Chicago, IL focused on releasing electronic music.<br/>")
 							break;
 						
 						case "contact":
-							$div.append('mail@c-l-e-a-r.net<br/><a href="http://soundcloud.com/c-l-e-a-r">http://soundcloud.com/c-l-e-a-r</a><br/>');
+							$div.append('> mail@c-l-e-a-r.net<br/><br/>');
 							break;
 							
 						default:
-							thisController.defaultCommand(value);
+							$div.append("-bash: '" + value + ": command not found<br/>");
 							break;
 					}
 
@@ -50,19 +52,6 @@ function MainController () {
 					$(window).scrollTop( $(document).height() );
 				}
 			});
-		},
-
-		contactCommand: function () {
-			$("<div></div>")
-				.html("mail@c-l-e-a-r.net<br/><br/>")
-				.appendTo($body);
-		},
-		
-		defaultCommand: function (_value) {
-			
-			$("<div></div>")
-				.html("'" + _value + "' command not found<br/><br/>")
-				.appendTo($body);
 		}
 	}
 }
