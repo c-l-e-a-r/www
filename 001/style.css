@@ -19,8 +19,9 @@ pre:first-child {
 	margin-top: 30px;
 }
 
-.ascii-player, pre {
-	margin: 0 20px;
+.ascii-player,
+pre {
+	margin-left: 20px;
 }
 
 .ascii-player {
