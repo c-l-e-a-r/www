@@ -33,6 +33,9 @@ function MainController () {
 						case "cd 001":
 							$div.append("<a href='http://c-l-e-a-r.net/001'>readme.txt</a>")
 							break;
+						case "open readme.txt":
+							window.location = "http://c-l-e-a-r.net/001"
+							break;
 						case "about":
 							$div.append("> We are a record label from Chicago, IL focused on releasing electronic music.<br/>")
 							break;
