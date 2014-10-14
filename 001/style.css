@@ -21,7 +21,7 @@ pre:first-child {
 
 .ascii-player,
 pre {
-	margin-left: 20px;
+	margin: 0 20px;
 }
 
 .ascii-player {
