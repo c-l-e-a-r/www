@@ -24,7 +24,7 @@ function MainController () {
 				
 				if(e.keyCode == 13 && value != "") {
 
-					var $div = $('<div>CLEAR:www guest$ ' + $(this).val() + '  <br/></div>');
+					var $div = $('<div>> ' + $(this).val() + '  <br/></div>');
 
 					switch (value){
 						case "ls":
@@ -37,15 +37,15 @@ function MainController () {
 							window.location = "http://c-l-e-a-r.net/001"
 							break;
 						case "about":
-							$div.append("> We are a record label from Chicago, IL focused on releasing electronic music.<br/>")
+							$div.append("We are a record label from Chicago, IL focused on releasing electronic music.<br/>")
 							break;
 						
 						case "contact":
-							$div.append('> mail@c-l-e-a-r.net<br/><br/>');
+							$div.append('mail@c-l-e-a-r.net<br/><br/>');
 							break;
 							
 						default:
-							$div.append("-bash: '" + value + ": command not found<br/>");
+							$div.append(value + ': command not found<br/>');
 							break;
 					}
 
