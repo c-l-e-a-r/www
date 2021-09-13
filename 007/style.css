@@ -11,12 +11,20 @@ main {
 	padding: 0 30% 0 60px;
 }
 
+.artwork {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 2rem;
+	padding: 2rem 0;
+}
+
 .photos {
 	display: grid;
 	grid-gap: 2rem;
 }
 
-.photos img {
+.photos img,
+.artwork img {
 	width: 100%;
 }
 
